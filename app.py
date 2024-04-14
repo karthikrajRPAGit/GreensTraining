@@ -6,7 +6,7 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello World'
 
-@app.route('/submit', actions=["POST","GET"])
+@app.route('/submit', methods=['POST','GET'])
 def hello_world_submit():
     return 'Hello World Submit'
 
